@@ -22,11 +22,11 @@ export default function Main() {
         </div>
       </div>
 
-      <div className="flex-c">
+      <div className="flex-c col-lg-12 col-md-12 col-sm-12">
         <span>
-          <p className="text-center">
-            To get $FTM tokens, send from 0.2 to 10 ETH or USDT/TUSD/USDC
-            [ERC-20] to the address below:
+          <p className="text-center ">
+            <b>  To get $FTM tokens, send from 0.2 to 10 ETH or USDT/TUSD/USDC
+            [ERC-20] to the address below:</b>
           </p>
         </span>
 

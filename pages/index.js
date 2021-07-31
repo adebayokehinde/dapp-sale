@@ -34,7 +34,7 @@ export default function Home() {
         />
       </Head>
 
-      <div className="containerm-5">
+      <div className="container m-5">
       <Main />
       </div>
 

@@ -51,7 +51,7 @@ a {
 /* (A) TABS CONTAINER */
 .tab {
   position: relative;
-  min-width: 400px;
+  /* min-width: 400px; */
   max-width: 900px;
   display: flex;
   flex-direction: column;
