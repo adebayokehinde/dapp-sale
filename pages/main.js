@@ -9,7 +9,7 @@ export default function Main() {
             <img src="https://fantomsale.foundation/qr-code.png" />
           </span>
         </div>
-        <div className="pl-4">
+        <div className="pl-4 pt-5">
           <h1>Buy BNB </h1>
           <p>1 BNB = $300</p>
         </div>

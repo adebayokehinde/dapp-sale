@@ -41,7 +41,8 @@ a {
 /* (A) TABS CONTAINER */
 .tab {
   position: relative;
-  max-width: 600px;
+  min-width: 600px;
+  max-width: 900px;
 }
 
 /* (B) HIDE CHECKBOX */
