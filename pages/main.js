@@ -3,19 +3,19 @@ import React from "react";
 export default function Main() {
   return (
     <>
-      <div className="flex-r">
-        <div>
+      <div className="row">
+        <div  className="col-sm-12 col-1g-6 col-md-6  flex-c">
           <span className="img-box">
             <img src="https://fantomsale.foundation/qr-code.png" />
           </span>
         </div>
-        <div className="pl-4 pt-5">
+        <div className=" col-sm-12 col-1g-6 col-md-6  pl-4 pt-5">
 
-          <h2>Send <span style={{ color: "#f3ba2f" }}>BNB</span> earn  <span style={{ color: "#b62f4f" }}> CAKE</span> </h2>
+          <h2>Send <span style={{ color: "black" }}>BNB</span> earn  <span style={{ color: "#b62f4f" }}> CAKE</span> </h2>
           <span className="cake-img">
             <img src="https://www.logo.wine/a/logo/Binance/Binance-BNB-Icon-Logo.wine.svg" />
 
-            <img src="https://cakestake.org/img/main/sec1/bif-pic.webp" />
+            <img src="https://cryptologos.cc/logos/pancakeswap-cake-logo.png" style={{ height: '75px' }} />
 
           </span>
           <p>1 BNB = $300</p>
@@ -24,7 +24,7 @@ export default function Main() {
 
       <div className="flex-c">
         <span>
-          <p>
+          <p className="text-center">
             To get $FTM tokens, send from 0.2 to 10 ETH or USDT/TUSD/USDC
             [ERC-20] to the address below:
           </p>
