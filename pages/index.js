@@ -28,14 +28,16 @@ export default function Home() {
           rel="styleSheet"
           href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
         />
-          <link
+        <link
           rel="styleSheet"
           href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
         />
       </Head>
 
       <div className="container m-5">
-      <Main />
+        <div className="main">
+          <Main />
+        </div>
       </div>
 
     </div>
