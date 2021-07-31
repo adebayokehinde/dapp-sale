@@ -51,6 +51,7 @@ a {
 /* (C) TAB LABEL */
 .tab label {
   display: block;
+  /* flex-direction: row; */
   margin-top: 10px;
   padding: 10px;
   color: #fff;
@@ -85,12 +86,23 @@ a {
 .tab input:checked ~ label::after { transform: rotate(90deg); }
 
 .address{
-  background: #1A2025;
-  border: 1px solid #313E47;
+  background: #f3ba2f;
+  border: 1px solid #f0b5c3;
   border-radius: 30px;
   padding: 10px 10px 10px 25px;
   max-width: 630px;
+  min-width: 600px;
   width: 100%;
-  color: white;
+  color: rgb(0, 0, 0);
+  box-shadow: 0 9px 50px -10px #000;
 
+}
+
+.cake-img{
+  width:100%;
+  height: 100px;
+}
+
+.cake-img img{
+  height: inherit;
 }

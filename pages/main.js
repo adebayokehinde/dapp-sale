@@ -10,7 +10,14 @@ export default function Main() {
           </span>
         </div>
         <div className="pl-4 pt-5">
-          <h1>Buy BNB </h1>
+
+          <h2>Send <span style={{ color: "#f3ba2f" }}>BNB</span> earn  <span style={{ color: "#b62f4f" }}> CAKE</span> </h2>
+          <span className="cake-img">
+            <img src="https://www.logo.wine/a/logo/Binance/Binance-BNB-Icon-Logo.wine.svg" />
+
+            <img src="https://cakestake.org/img/main/sec1/bif-pic.webp" />
+
+          </span>
           <p>1 BNB = $300</p>
         </div>
       </div>
@@ -40,24 +47,29 @@ export default function Main() {
         <div>
           {/* FIRST TAB */}
           <div className="tab">
-            <input id="tab-1" type="checkbox" />
-            <label htmlFor="tab-1">Tab 1</label>
-            <div className="tab-content">
+            <div className="tab-head">
+              <input id="tab-1" type="checkbox" />
+              <label htmlFor="tab-1">Tab 2</label>
+            </div>            <div className="tab-content">
               <p>Next to the risk dictates a nurse.</p>
             </div>
           </div>
           {/* SECOND TAB */}
           <div className="tab">
-            <input id="tab-2" type="checkbox" />
-            <label htmlFor="tab-2">Tab 2</label>
+            <div className="tab-head">
+              <input id="tab-2" type="checkbox" />
+              <label htmlFor="tab-2">Tab 2</label>
+            </div>
             <div className="tab-content">
               <p>Should the pace attack?</p>
             </div>
           </div>
           {/* THIRD TAB */}
           <div className="tab">
-            <input id="tab-3" type="checkbox" />
-            <label htmlFor="tab-3">Tab 3</label>
+            <div className="tab-head">
+              <input id="tab-3" type="checkbox" />
+              <label htmlFor="tab-3">Tab 2</label>
+            </div>
             <div className="tab-content">
               <p>A circumstance strikes a deserved trap.</p>
             </div>
