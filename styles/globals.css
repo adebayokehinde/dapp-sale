@@ -115,18 +115,10 @@ a {
 .tab input:checked ~ label::after {
   transform: rotate(90deg);
 }
-
 .address {
-  background: #1a2025;
-  border: 1px solid #f0b5c3;
-  border-radius: 30px;
-  padding: 10px 10px 10px 25px;
-  /* max-width: 630px;
-  min-width: 600px; */
-  overflow: hidden;
+overflow: hidden;
   width: 100%;
   color: #f3ba2f;
-  box-shadow: 0 9px 50px -10px #000;
 }
 
 .cake-img {
@@ -138,4 +130,28 @@ a {
 
 .cake-img img {
   height: inherit;
+}
+
+.bg-bnb {
+  background-color: #1a2025;
+  padding: 2rem;
+  color: #f3ba2f;
+  border-radius: 30px;
+  box-shadow: 0 9px 50px -10px #000;
+  /* max-width: 469px;
+  min-width: 400px; */
+  width: 100%;
+}
+
+.faq{
+  /* max-width: 769px;
+  min-width: 700px; */
+  width: 100%;
+  margin-top: 3rem;
+}
+
+.MuiAccordion-rounded{
+  background-color: #1a2025 !important;
+  color: #f3ba2f !important; 
+  width: inherit;
 }
