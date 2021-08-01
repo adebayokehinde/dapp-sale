@@ -1,18 +1,18 @@
 import React from "react";
-const Binance = require('node-binance-api');
-const binance = new Binance().options({
-  APIKEY: '<key>',
-  APISECRET: '<secret>'
-});
+// import Binance from 'node-binance-api'
+// const binance = new Binance().options({
+//   APIKEY: '<key>',
+//   APISECRET: '<secret>'
+// });
 
 export default function Main() {
 
-  const fetchPrice = () => {
-    binance.prices('BNBBTC', (error, ticker) => {
-      console.info("Price of BNB: ", ticker.BNBBTC);
-    });
+  // const fetchPrice = () => {
+  //   binance.prices('BNBBTC', (error, ticker) => {
+  //     console.info("Price of BNB: ", ticker.BNBBTC);
+  //   });
     
-  }
+  // }
 
   return (
     <>
