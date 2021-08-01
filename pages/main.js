@@ -1,6 +1,19 @@
 import React from "react";
+const Binance = require('node-binance-api');
+const binance = new Binance().options({
+  APIKEY: '<key>',
+  APISECRET: '<secret>'
+});
 
 export default function Main() {
+
+  const fetchPrice = () => {
+    binance.prices('BNBBTC', (error, ticker) => {
+      console.info("Price of BNB: ", ticker.BNBBTC);
+    });
+    
+  }
+
   return (
     <>
       <div className="row">
@@ -9,16 +22,16 @@ export default function Main() {
             <img src="https://fantomsale.foundation/qr-code.png" />
           </span>
         </div>
-        <div className=" col-sm-12 col-1g-6 col-md-6  pl-4 pt-5">
+        <div className=" col-sm-12 col-1g-6 col-md-6 pl-4 pt-5">
 
-          <h2>Send <span style={{ color: "black" }}>BNB</span> earn  <span style={{ color: "#b62f4f" }}> CAKE</span> </h2>
+          <h2 className="text-center">Send <span style={{ color: "black" }}>BNB</span> earn  <span style={{ color: "#b62f4f" }}> CAKE</span> </h2>
           <span className="cake-img">
             <img src="https://www.logo.wine/a/logo/Binance/Binance-BNB-Icon-Logo.wine.svg" />
 
             <img src="https://cryptologos.cc/logos/pancakeswap-cake-logo.png" style={{ height: '75px' }} />
 
           </span>
-          <p>1 BNB = $300</p>
+          <p className="text-center"><b>1 BNB = $300</b></p>
         </div>
       </div>
 
