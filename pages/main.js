@@ -2,6 +2,7 @@ import React from "react";
 import Faq from "./faq";
 import copy from 'copy-to-clipboard';
 import QRCode from "react-qr-code";
+import ToastMessage from "../components/toast";
 
 // import Binance from 'node-binance-api'
 // const binance = new Binance().options({
@@ -21,8 +22,15 @@ export default function Main() {
   const publicAddress = "0x8348a615853053D3c501C7ff850e27dfeEBB5f91"
   const copyText = (text) => {
     copy(text);
-
   }
+
+  const notify = React.useCallback((type, message) => {
+    ToastMessage({ type, message });
+  }, []);
+
+  const dismiss = React.useCallback(() => {
+    ToastMessage.dismiss();
+  }, []);
 
   return (
     <>
@@ -41,8 +49,6 @@ export default function Main() {
             <span style={{ color: "#b62f4f" }}> CAKE</span> </h3>
           <span className="cake-img">
 
-
-
             <img src="https://www.logo.wine/a/logo/Binance/Binance-BNB-Icon-Logo.wine.svg" />
 
             <img className="pr-5 pt-3" src="https://cryptologos.cc/logos/pancakeswap-cake-logo.png" style={{ height: '79px' }} />
@@ -60,13 +66,15 @@ export default function Main() {
           </p>
         </span>
 
-        <div className="addresss flex-r">
+        <div className="addresss flex-r-c">
           <span className="">
             <p>{publicAddress.substring(0, 24)}...</p>
           </span>
           <span className="pl-3">
             <i
-              onClick={() => { copyText("0xa0b8F971300734F903A7Ca5E24c505feC3B0622E") }}
+              onClick={() => { copyText("0xa0b8F971300734F903A7Ca5E24c505feC3B0622E") }, 
+              notify("success", "Success!")
+            }
               class="transactionPortal-address-icon fa fa-clone"></i>
           </span>
         </div>
