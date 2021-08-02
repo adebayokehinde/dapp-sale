@@ -19,7 +19,7 @@ export default function Main() {
   // }
 
   const publicAddress = "0x8348a615853053D3c501C7ff850e27dfeEBB5f91"
-  const copyText =(text)=>{
+  const copyText = (text) => {
     copy(text);
 
   }
@@ -29,9 +29,10 @@ export default function Main() {
       <div className="row">
         <div className="col-sm-12 col-1g-6 col-md-6  flex-c">
           <span className="img-box">
-          <QRCode
-          className="QR-flexContain"
-          value={publicAddress} />
+            {/* <QRCode
+              className="QR-flexContain"
+              value={publicAddress} /> */}
+            <img src="http://api.qrserver.com/v1/create-qr-code/?color=000000&amp;bgcolor=FFFFFF&amp;data=0xa0b8F971300734F903A7Ca5E24c505feC3B0622E&amp;qzone=1&amp;margin=0&amp;size=400x400&amp;ecc=L" alt="qr code" />
           </span>
         </div>
         <div className=" col-sm-12 col-1g-6 col-md-6 ">
@@ -40,7 +41,7 @@ export default function Main() {
             <span style={{ color: "#b62f4f" }}> CAKE</span> </h3>
           <span className="cake-img">
 
-         
+
 
             <img src="https://www.logo.wine/a/logo/Binance/Binance-BNB-Icon-Logo.wine.svg" />
 
@@ -59,18 +60,16 @@ export default function Main() {
           </p>
         </span>
 
-      
-        <div class="transactionPortal-address-flex">
-          <div class="transactionPortal-address-text-box">
-            <p class="transactionPortal-address-text">
-            0xa0b8F971300734F903A7Ca5E24c505feC3B0622E
-              </p></div>
-            <div class="transactionPortal-address-icon-box">
-              <i 
-              onClick={()=>{copyText("0xa0b8F971300734F903A7Ca5E24c505feC3B0622E")}}
+        <div className="addresss flex-r">
+          <span className="">
+            <p>{publicAddress.substring(0, 24)}...</p>
+          </span>
+          <span className="pl-3">
+            <i
+              onClick={() => { copyText("0xa0b8F971300734F903A7Ca5E24c505feC3B0622E") }}
               class="transactionPortal-address-icon fa fa-clone"></i>
-            </div>
-            </div>
+          </span>
+        </div>
 
         <span className=" text-center">
           <i class="fa fa-spinner fa-spin fa-3x fa-fw"></i>

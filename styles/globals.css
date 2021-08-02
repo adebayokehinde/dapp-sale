@@ -48,6 +48,7 @@ a {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  
 }
 
 .img-box img {
@@ -200,4 +201,7 @@ a {
   background-color: #1a2025 !important;
   color: #f3ba2f !important; 
   width: inherit;
+}
+.MuiSvgIcon-root{
+  color:white
 }

@@ -37,7 +37,7 @@ export default function Home() {
 
       </Head>
 
-      <div className="container mt-5 mb-5">
+      <div className="container mt-2 mb-5">
         <div className="main">
           <Main />
         </div>
