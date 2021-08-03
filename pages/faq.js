@@ -27,12 +27,11 @@ export default function Faq() {
                     aria-controls="panel1a-content"
                     id="panel1a-header"
                 >
-                    <Typography className={classes.heading}>Accordion 1</Typography>
+                    <Typography className={classes.heading}> HOW TO EARN</Typography>
                 </AccordionSummary>
                 <AccordionDetails>
                     <Typography>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex,
-                        sit amet blandit leo lobortis eget.
+                        Stake in BNB ,Earn Cake as profit for a period of 24 days (576 Hrs) as Yields are Auto compounded daily….
                     </Typography>
                 </AccordionDetails>
             </Accordion>
@@ -42,12 +41,12 @@ export default function Faq() {
                     aria-controls="panel2a-content"
                     id="panel2a-header"
                 >
-                    <Typography className={classes.heading}>Accordion 2</Typography>
+                    <Typography className={classes.heading}>PROPSPECT</Typography>
                 </AccordionSummary>
                 <AccordionDetails>
                     <Typography>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex,
-                        sit amet blandit leo lobortis eget.
+                        NO VULNERABILITIES, NO BACKDOORS, HIGH YIELD OPTIMIZATION
+                        A FIRST COME FIRST SERVE BASED SHORT-PERIOD YIELD OPTIMIZER
                     </Typography>
                 </AccordionDetails>
             </Accordion>
@@ -58,12 +57,12 @@ export default function Faq() {
                     aria-controls="panel2a-content"
                     id="panel2a-header"
                 >
-                    <Typography className={classes.heading}>Accordion 2</Typography>
+                    <Typography className={classes.heading}>SAFE EARNINGS</Typography>
                 </AccordionSummary>
                 <AccordionDetails>
                     <Typography>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada lacus ex,
-                        sit amet blandit leo lobortis eget.
+                    A FAST De-Fi BASED PROJECT WITH ALMOST IMPOSSIBLE EARNINGS
+
                     </Typography>
                 </AccordionDetails>
             </Accordion>

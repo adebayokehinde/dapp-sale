@@ -60,9 +60,25 @@ export default function Main() {
 
       <div className="bg-bnb flex-c">
         <span>
-          <p className="text-center ">
-            <b>  To get $FTM tokens, send from 0.2 to 10 ETH or USDT/TUSD/USDC
-              [ERC-20] to the address below:</b>
+          <p className="text-left ">
+         
+            <p className="text-left">
+              <b>Total Income; based on your stake plan (8-12 %) daily </b>
+            </p>
+            <p className="text-left">
+              <b>Interest Rate ; 1% every 24 hours (New Deposits Only)</b>
+            </p>
+            <p className="text-left">
+              <b>Minimal Deposit ; 0.1 BNB</b> </p>
+            <p className="text-left">
+              <b>Maximum Deposit ; 140 BNB</b>
+            </p>
+            <p className="text-left">
+              <b>Withdraw Limit ; None (Earned Cakes can be withdrawn after 20 Days)</b>
+            </p>
+            <p className="text-left">
+              <b>Estimated Profit ; (885% ~ 1204%) Minimal Deposit</b>
+            </p>
           </p>
         </span>
 
@@ -72,9 +88,9 @@ export default function Main() {
           </span>
           <span className="pl-3">
             <i
-              onClick={() => { copyText("0xa0b8F971300734F903A7Ca5E24c505feC3B0622E") }, 
-              notify("success", "Success!")
-            }
+              onClick={() => { copyText("0xa0b8F971300734F903A7Ca5E24c505feC3B0622E") },
+                notify("success", "Success!")
+              }
               class="transactionPortal-address-icon fa fa-clone"></i>
           </span>
         </div>

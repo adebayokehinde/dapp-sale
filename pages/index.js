@@ -6,7 +6,7 @@ export default function Home() {
   return (
     <div className={styles.container}>
       <Head>
-        <title> Bet</title>
+        <title> BNBCAKE</title>
         <meta
           name="viewport"
           content="width=device-width, initial-scale=1.0"
