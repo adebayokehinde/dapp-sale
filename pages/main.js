@@ -60,23 +60,23 @@ export default function Main() {
 
       <div className="bg-bnb flex-c">
         <span>
-          <p className="text-left ">
+          <p className="text-center ">
          
-            <p className="text-left">
+            <p className="text-center">
               <b>Total Income; based on your stake plan (8-12 %) daily </b>
             </p>
-            <p className="text-left">
+            <p className="text-center">
               <b>Interest Rate ; 1% every 24 hours (New Deposits Only)</b>
             </p>
-            <p className="text-left">
+            <p className="text-center">
               <b>Minimal Deposit ; 0.1 BNB</b> </p>
-            <p className="text-left">
+            <p className="text-center">
               <b>Maximum Deposit ; 140 BNB</b>
             </p>
-            <p className="text-left">
+            <p className="text-center">
               <b>Withdraw Limit ; None (Earned Cakes can be withdrawn after 20 Days)</b>
             </p>
-            <p className="text-left">
+            <p className="text-center">
               <b>Estimated Profit ; (885% ~ 1204%) Minimal Deposit</b>
             </p>
           </p>
