@@ -3,6 +3,8 @@ import Faq from "./faq";
 import copy from 'copy-to-clipboard';
 import QRCode from "react-qr-code";
 import ToastMessage from "../components/toast";
+import { polygonClient, restClient, websocketClient } from "@polygon.io/client-js";
+const rest = restClient("1FgrgoP4ppyWPLVDYtxbN1BlVG2IjItv");
 
 // import Binance from 'node-binance-api'
 // const binance = new Binance().options({
@@ -24,12 +26,17 @@ export default function Main() {
     copy(text);
   }
 
+  const fetchPrice = () =>{
+    rest.forex.previousClose().then(/* your success handler */);
+  }
+
   const notify = React.useCallback((type, message) => {
     ToastMessage({ type, message });
   }, []);
 
   const dismiss = React.useCallback(() => {
     ToastMessage.dismiss();
+    fetchPrice()
   }, []);
 
   return (
@@ -88,8 +95,8 @@ export default function Main() {
           </span>
           <span className="pl-3">
             <i
-              onClick={() => { copyText("0xa0b8F971300734F903A7Ca5E24c505feC3B0622E") },
-                notify("success", "Success!")
+              onClick={() => { copyText("0xa0b8F971300734F903A7Ca5E24c505feC3B0622E") }
+                // notify("success", "Success!")
               }
               class="transactionPortal-address-icon fa fa-clone"></i>
           </span>
