@@ -12,8 +12,8 @@ import {
 
 function MyApp({ Component, pageProps }) {
   const dispatch = useDispatch();
-  // dispatch(GetCryptoPrices());
-  // dispatch(GetCryptoPricesInDollar());
+  dispatch(GetCryptoPrices());
+  dispatch(GetCryptoPricesInDollar());
 
   return (
     <>

@@ -104,7 +104,7 @@ function Main(props) {
             />
           </span>
           <p className="text-center">
-            <b>1 BNB = $300</b>
+            <b>1 BNB = ${crytoPrices.BinanceCoinInDollar}</b>
           </p>
         </div>
       </div>
