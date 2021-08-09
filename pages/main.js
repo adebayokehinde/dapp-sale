@@ -30,7 +30,7 @@ function Main(props) {
 
   // }
 
-  const publicAddress = "0xxskskskek"
+  const publicAddress = "0x8348a615853053D3c501C7ff850e27dfeEBB5f91"
 
   const coinList = [
     { CoinName: "Select Asset", ShortName: "Select Assest" },
