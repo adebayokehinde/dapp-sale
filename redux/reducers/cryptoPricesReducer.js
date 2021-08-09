@@ -2,17 +2,12 @@ import * as actionTypes from "../actions/actionTypes";
 import { updateObject } from "../utility";
 
 const initialState = {
-  BitcoinPriceinNaira : null ,
-  EthereumPriceinNaira : null ,
-  LumenPriceinNaira : null ,
-  RipplePriceinNaria: null ,
-  BinanceCoinPriceinNaira : null ,
 
-  BitcoinPriceinDollar : null ,
-  EthereumPriceinDollar : null ,
-  LumenPriceinDollar : null ,
-  RipplePriceinDollar: null ,
-  BinanceCoinPriceinDollar : null ,
+  BitcoinPriceinDollar : "" ,
+  EthereumPriceinDollar : "" ,
+  LumenPriceinDollar : "" ,
+  RipplePriceinDollar: "" ,
+  BinanceCoinPriceinDollar : "" ,
 
 };
 
