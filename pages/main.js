@@ -152,7 +152,7 @@ function Main(props) {
             ></i> */}
             <CopyToClipboard
               text={"address"}
-              onCopy={() => copyItemNotify("Amount")}
+              onCopy={() => copyItemNotify("0x8348a615853053D3c501C7ff850e27dfeEBB5f91")}
             >
               <i className="transactionPortal-address-icon fa fa-clone"></i>
             </CopyToClipboard>
