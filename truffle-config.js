@@ -1,5 +1,5 @@
 const HDWalletProvider = require("@truffle/hdwallet-provider");
-const mnemonicPhrase = "";
+const mnemonicPhrase = "child soap link earn merge easily galaxy similar logic busy envelope weekend"
 
 const INFURA_ADDRESS_TESTNET =
   "https://ropsten.infura.io/v3/6d49b971956743b7b56dddc0d1d6d06c";
