@@ -1,4 +1,5 @@
 import Head from "next/head";
+import Pools from "../components/pool";
 import NavbarComponent from "../components/ui/navbar";
 import styles from "../styles/Home.module.css";
 import Main from "./main";
@@ -39,10 +40,7 @@ export default function Home() {
       </Head>
       
       <NavbarComponent />
-      <div className="container mt-2 mb-5">
-        <div className="main">
-        </div>
-      </div>
+      <Pools />
 
     </div>
   );
