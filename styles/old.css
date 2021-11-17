@@ -1,0 +1,230 @@
+html,
+/* body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  background-color: #f3ba2f;
+  
+} */
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  background-color: #111111 !important;
+}
+
+
+.main {
+  padding: 5rem 0;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.flex-r {
+  display: flex;
+  flex-direction: row;
+}
+
+.flex-c {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-r-c {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.img-box {
+  height: 200px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.img-box img {
+  height: inherit;
+  object-fit: contain;
+}
+
+/* (A) TABS CONTAINER */
+.tab {
+  position: relative;
+  /* min-width: 400px; */
+  max-width: 900px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  margin: 0 auto;
+}
+
+/* (B) HIDE CHECKBOX */
+.tab input {
+  display: none;
+}
+
+/* (C) TAB LABEL */
+.tab label {
+  display: block;
+  /* flex-direction: row; */
+  margin-top: 10px;
+  padding: 1rem;
+  color: #fff;
+  font-weight: bold;
+  border-radius: 50px;
+  background: #1a2025;
+  cursor: pointer;
+}
+
+/* (D) TAB CONTENT */
+.tab .tab-content {
+  background: grey;
+  /* CSS ANIMATION WILL NOT WORK WITH AUTO HEIGHT */
+  /* THIS IS WHY WE USE MAX-HEIGHT INSTEAD */
+  overflow: hidden;
+  transition: max-height 0.3s;
+  max-height: 0;
+}
+.tab .tab-content p {
+  padding: 10px;
+}
+
+/* (E) OPEN TAB ON CHECKED */
+.tab input:checked ~ .tab-content {
+  max-height: 100vh;
+}
+
+/* (F) EXTRA - ADD ARROW INDICATOR */
+.tab label::after {
+  content: "\25b6";
+  position: absolute;
+  right: 10px;
+  top: 20px;
+  display: block;
+  transition: all 0.4s;
+}
+.tab input:checked ~ label::after {
+  transform: rotate(90deg);
+}
+.address {
+  overflow: hidden;
+  width: 100%;
+  color: #f3ba2f;
+  display: flex;
+  flex-direction: row
+}
+
+.QR-flexContain {
+  padding-top: 0;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  flex-direction: column;
+}
+
+.transactionPortal-address-flex {
+  display: flex;
+  flex-direction: row;
+  min-width: 300px;
+  width:500px;
+  margin: 10px auto;
+  padding: 15px;
+  border-radius: 10px;
+  border: 0px solid #5a1d65;
+}
+
+.transactionPortal-address-text-box {
+  width: 85%;
+  display: flex;
+  flex-direction: column;
+}
+
+.transactionPortal-address-text {
+  font-size: 15px;
+  font-weight: 700;
+  margin: 0;
+  text-align: center;
+}
+
+.transactionPortal-address-icon-box {
+  width: 15%;
+  display: flex;
+  flex-direction: column;
+}
+
+.transactionPortal-address-icon {
+  color: #f5a623;
+  text-align: center;
+  font-size: 20px;
+}
+
+.cake-img {
+  width: 100%;
+  height: 100px;
+  justify-content: center;
+  display: flex;
+}
+
+.cake-img img {
+  height: inherit;
+}
+
+.bg-bnb {
+  background-color: #1a2025;
+  padding: 2rem;
+  color: #f3ba2f;
+  border-radius: 30px;
+  box-shadow: 0 9px 50px -10px #000;
+  /* max-width: 469px;
+  min-width: 400px; */
+  width: 100%;
+}
+
+.faq{
+  /* max-width: 769px;
+  min-width: 700px; */
+  width: 100%;
+  margin-top: 3rem;
+}
+
+.MuiAccordion-rounded{
+  background-color: #1a2025 !important;
+  color: #f3ba2f !important; 
+  width: inherit;
+}
+.MuiSvgIcon-root{
+  color:white
+}
+
+.message {
+  cursor: pointer;
+  font: 15px Helvetica, Arial, sans-serif;
+  background: #eee;
+  padding: 20px;
+  text-align: center;
+  transition: 100ms ease-in background;
+  margin: 10px;
+}
+.message:hover {
+  background: #ccc;
+}

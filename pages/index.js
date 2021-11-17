@@ -1,4 +1,6 @@
 import Head from "next/head";
+import Pools from "../components/pool";
+import NavbarComponent from "../components/ui/navbar";
 import styles from "../styles/Home.module.css";
 import Main from "./main";
 
@@ -36,12 +38,9 @@ export default function Home() {
         <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
 
       </Head>
-
-      <div className="container mt-2 mb-5">
-        <div className="main">
-          <Main />
-        </div>
-      </div>
+      
+      <NavbarComponent />
+      <Pools />
 
     </div>
   );
