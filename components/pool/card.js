@@ -29,7 +29,7 @@ const PoolsCardComponent = (props) => {
             if (networkData) {
                 const PineTokenAbi = PineTokenJson.abi;
                 const PineTokenConract = new web3.eth.Contract(PineTokenAbi, contractAddress);
-
+ 
                 const totalSupply = await PineTokenConract.methods.totalSupply().call();
                 const walletBalance = await PineTokenConract.methods.balanceOf(accounts[0]);
                 setIsLoaded(true)
