@@ -577,6 +577,17 @@ textarea {
   border: 1px solid rgba(0, 0, 0, 0.198);
 }
 
+.pool-icon{
+  display: flex;
+  flex-direction: column;
+  height: 55px;
+}
+
+.pool-icon-file{
+  height: inherit;
+  object-fit: contain;
+}
+
 @import url("https://fonts.googleapis.com/css2?family=Shippori+Antique&display=swap");
 .pool-apy {
   width: 100%;

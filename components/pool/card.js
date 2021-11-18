@@ -1,6 +1,8 @@
 import React from 'react'
 
-export default function Card() {
+const tokenIcon = "https://res.cloudinary.com/djhjipy7n/image/upload/v1629301903/logo_ugbfrm.png"
+
+const Card =()=> {
     return (
         <>
             <div className="grid">
@@ -10,12 +12,12 @@ export default function Card() {
                     </div>
                     <div className="pool-apy flex-r pt-3 pb-3">
                         <p className="text-left">APY: 50%</p>
-                        <p className="text-right ml-auto">TVL: $200,000</p>
+                        <p className="text-right ml-auto">TVL: $19,000</p>
                     </div>
                     <div className="pool-card-body ">
                         <div className="flex-r">
                             <div className="pool-icon mr-5 ">
-                                <img src="https://boltdollar.finance/static/media/CAKE.c64bb359.svg" />
+                                <img className="pool-icon-file" src="https://boltdollar.finance/static/media/CAKE.c64bb359.svg" />
                             </div>
                             <div className="ml-auto flex-c">
                                 <span>10 Cakes</span>
@@ -29,7 +31,9 @@ export default function Card() {
                     <div className="pool-card-body ">
                         <div className="flex-r">
                             <div className="pool-icon mr-5 ">
-                                <img src="https://boltdollar.finance/static/media/CAKE.c64bb359.svg" />
+                                <img className="pool-icon-file"
+                                src={tokenIcon}
+                                />
                             </div>
                             <div className="ml-auto flex-c">
                                 <span>10 Cakes</span>
@@ -44,16 +48,17 @@ export default function Card() {
 
                 <div className="pool-card  flex-c ">
                     <div className="pool-title flex-c">
-                        <p>CAKE</p>
+                        <p>CAKE-BUSD</p>
                     </div>
                     <div className="pool-apy flex-r pt-3 pb-3">
-                        <p className="text-left">APY: 50%</p>
-                        <p className="text-right ml-auto">TVL: $200,000</p>
+                        <p className="text-left">APY: 54%</p>
+                        <p className="text-right ml-auto">TVL: $47,000</p>
                     </div>
                     <div className="pool-card-body ">
                         <div className="flex-r">
                             <div className="pool-icon mr-5 ">
-                                <img src="https://boltdollar.finance/static/media/CAKE.c64bb359.svg" />
+                                <img className="pool-icon-file"
+                                    src="https://boltdollar.finance/static/media/cake-bnb.18cb167c.svg" />
                             </div>
                             <div className="ml-auto flex-c">
                                 <span>10 Cakes</span>
@@ -67,7 +72,9 @@ export default function Card() {
                     <div className="pool-card-body ">
                         <div className="flex-r">
                             <div className="pool-icon mr-5 ">
-                                <img src="https://boltdollar.finance/static/media/CAKE.c64bb359.svg" />
+                                <img className="pool-icon-file" 
+                                 src={tokenIcon}
+                                />
                             </div>
                             <div className="ml-auto flex-c">
                                 <span>10 Cakes</span>
@@ -82,16 +89,17 @@ export default function Card() {
 
                 <div className="pool-card  flex-c  ">
                     <div className="pool-title flex-c">
-                        <p>CAKE</p>
+                        <p>BNB-BUSD</p>
                     </div>
                     <div className="pool-apy flex-r pt-3 pb-3">
                         <p className="text-left">APY: 50%</p>
-                        <p className="text-right ml-auto">TVL: $200,000</p>
+                        <p className="text-right ml-auto">TVL: $192,000</p>
                     </div>
                     <div className="pool-card-body ">
                         <div className="flex-r">
                             <div className="pool-icon mr-5 ">
-                                <img src="https://boltdollar.finance/static/media/CAKE.c64bb359.svg" />
+                                <img className="pool-icon-file"
+                                    src="https://boltdollar.finance/static/media/busd-bnb.df1bd131.svg" />
                             </div>
                             <div className="ml-auto flex-c">
                                 <span>10 Cakes</span>
@@ -105,7 +113,9 @@ export default function Card() {
                     <div className="pool-card-body ">
                         <div className="flex-r">
                             <div className="pool-icon mr-5 ">
-                                <img src="https://boltdollar.finance/static/media/CAKE.c64bb359.svg" />
+                                <img className="pool-icon-file"
+                                 src={tokenIcon}
+                                />
                             </div>
                             <div className="ml-auto flex-c">
                                 <span>10 Cakes</span>
@@ -122,3 +132,5 @@ export default function Card() {
         </>
     )
 }
+
+export default Card;
