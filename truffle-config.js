@@ -1,13 +1,11 @@
 const HDWalletProvider = require("@truffle/hdwallet-provider");
 const mnemonicPhrase = "child soap link earn merge easily galaxy similar logic busy envelope weekend"
 
-const INFURA_ADDRESS_TESTNET =
-  "https://ropsten.infura.io/v3/6d49b971956743b7b56dddc0d1d6d06c";
-const INFURA_ADDRESS_MAINNET =
-  "https://mainnet.infura.io/v3/6d49b971956743b7b56dddc0d1d6d06c";
+const INFURA_ADDRESS_TESTNET = "https://ropsten.infura.io/v3/6d49b971956743b7b56dddc0d1d6d06c";
+const INFURA_ADDRESS_MAINNET = "https://mainnet.infura.io/v3/6d49b971956743b7b56dddc0d1d6d06c";
 
 const BSC_MAINNET = "https://bsc-dataseed1.binance.org:443"
-const BSC_TESTNET =  "https://data-seed-prebsc-2-s1.binance.org:8545"
+const BSC_TESTNET = "https://data-seed-prebsc-2-s1.binance.org:8545"
 const ANKR_TESTNET = "https://apis.ankr.com/0f0f794748b6400394c382f3c5ac4e0b/e6a8a181f689ef7bee923efc99fac579/binance/full/test"
 
 module.exports = {
@@ -38,12 +36,12 @@ module.exports = {
       network_id: '*',
       gas: 3000000,
       gasPrice: 10000000000,
-      networkCheckTimeout: 10000,        
+      networkCheckTimeout: 10000,
 
     }
   },
-  contracts_directory: "./contractsEngine/contracts/",
-  contracts_build_directory: "./contractsEngine/abis/",
+  contracts_directory: "./web3/contracts/",
+  contracts_build_directory: "./web3/abis/",
   compilers: {
     solc: {
       version: "*",
@@ -52,6 +50,6 @@ module.exports = {
         runs: 200,
       },
     },
-    
+
   },
 };
